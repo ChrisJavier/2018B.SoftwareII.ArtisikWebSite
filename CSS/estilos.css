@@ -1,18 +1,17 @@
+
 @import url('https://fonts.googleapis.com/css?family=Italianno');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
 * {
     box-sizing: border-box;
 }
-
 img{
-    display : block;
+    display: block;
     max-width: 100%;
 }
-
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -24,20 +23,16 @@ h1,h2,h3,h4,h5,h6{
     text-align: center;
     font-size: 40px;
     color: #0000cc;
-    
 }
 
 .contenedor{
     margin: auto;
     width: 99%;
 }
-
-/************Header***********/
-
+/*--------------------------Estilos de header---------------*/
 .header {
     height: 60px;
 }
-
 .header .contenedor {
     display:flex;
     justify-content: space-between;
@@ -47,13 +42,12 @@ h1,h2,h3,h4,h5,h6{
     margin: 5px;
     color: #0033cc;
 }
-
 .icon-menu {
     display: block;
     width: 40px;
     height: 40px;
     font-size: 30px;
-    background: #0033cc;
+    background: #0000cc00;
     text-align: center;
     line-height: 45px;
     border-radius: 5px;
@@ -62,7 +56,6 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /*Estilos de menu*/
-
 .nav{
     position: absolute;
     top: 60px;
@@ -75,7 +68,7 @@ h1,h2,h3,h4,h5,h6{
     list-style: none;
     padding: 0;
     margin: 0;
-    
+    color: #0000cc;
 }
 
 .menu__link{
@@ -83,12 +76,15 @@ h1,h2,h3,h4,h5,h6{
     padding: 20px;
     background: #fff;
     text-decoration: none;
+    color: #0000cc;
+
+}
+
+.menu__link:hover, .select {
+    background: #0033ccc5;
     color: #fff;
 }
-.menu__link:hover, .select {
-    background: white;
-    color: #0033cc;
-}
+
 .mostrar {
     left: 0;
 }
@@ -115,6 +111,7 @@ h1,h2,h3,h4,h5,h6{
 .banner__txt{
     display: none;
 }
+/*Estilos de info*/
 
 .info__columna{
     background: #0033cc;
@@ -122,32 +119,29 @@ h1,h2,h3,h4,h5,h6{
     padding: 15px;
     margin-bottom: 30px;
 }
-
-
-
-
-/*--------------------Estilos de footer--------------*/
-.footer{
-    background: #333;
+/*--------------------Estilos de paquetes--------------*/
+.paquetes__columna{
+    position: relative;
+    margin-bottom: 30px;
+}
+.paquetes__descripcion{
+    position: absolute;
+    top: 0;
+    left: 0;
     color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-.footer .social [class^="icon-"]{
-    display: inline-block;
-    color: #333;
-    text-decoration: none;
-    font-size: 30px;
-    padding: 10px;
-    background: white;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    line-height: 40px;
+    background: rgba(0,0,0,0.4);
+    width: 60%;
+    height: 100%;
+    padding: 20px;
 }
 
-
-
+.paquetes__titulo{
+    font-size: 60px;
+    margin: 5px 0;
+}
+.paquetes__img{
+    width: 100%;
+}
 /*--------------------Estilos de footer--------------*/
 .footer{
     background: #333;
@@ -207,9 +201,7 @@ h1,h2,h3,h4,h5,h6{
     .footer .social [class^="icon-"]{
         margin: 0 10px;
     }
-    .info__img{
-        padding: 5px;
-    }
+   
 }
 
 @media(min-width:768px){
@@ -218,9 +210,6 @@ h1,h2,h3,h4,h5,h6{
     }
     .paquetes__titulo{
         font-size: 40px;
-    }
-    .info__img{
-        padding: 5px;
     }
     
 }
@@ -238,6 +227,7 @@ h1,h2,h3,h4,h5,h6{
     }
     .menu{
         display: flex;
+        color: #0000cc;
     }
     .icon-menu{
         display: none;
@@ -276,9 +266,6 @@ h1,h2,h3,h4,h5,h6{
     .paquetes__txt{
         font-size: 20px;
     }
-    .info__img{
-        padding: 5px;
-    }
     
 }
 @media(min-width:1280px){
@@ -294,8 +281,4 @@ h1,h2,h3,h4,h5,h6{
     .info{
         margin-top: -220px;
     }
-    .info__img{
-        padding: 5px;
-    }
-    
 }
