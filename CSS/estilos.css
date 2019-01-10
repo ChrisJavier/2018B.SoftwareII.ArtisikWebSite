@@ -266,7 +266,15 @@ h1,h2,h3,h4,h5,h6{
     .paquetes__txt{
         font-size: 20px;
     }
+    .menu__link{
+        background: #0000cc00;
+        color: #fff;
+    }
     
+    .menu__link:hover, .select {
+        background: #0000cca4;
+        color: #fff;
+    }
 }
 @media(min-width:1280px){
     .contenedor{
