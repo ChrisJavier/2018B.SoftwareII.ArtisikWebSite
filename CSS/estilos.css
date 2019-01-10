@@ -50,8 +50,8 @@ h1,h2,h3,h4,h5,h6{
     background: #0000cc00;
     text-align: center;
     line-height: 45px;
-    border-radius: 5px;
     margin-left: auto;
+    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -59,7 +59,7 @@ h1,h2,h3,h4,h5,h6{
 .nav{
     position: absolute;
     top: 60px;
-    left: -100%;
+    right: -100%;
     width: 100%;
     transition: all 0.4s;
 }
@@ -86,7 +86,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .mostrar {
-    left: 0;
+    right: 0;
 }
 
 /*-------------------Estilos del banner---------------*/
