@@ -11,7 +11,6 @@ img{
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -53,6 +52,7 @@ h1,h2,h3,h4,h5,h6{
     margin-left: auto;
     border-radius: 5px;
     cursor: pointer;
+    right: 70px;
 }
 
 /*Estilos de menu*/
@@ -65,6 +65,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .menu{
+    
     list-style: none;
     padding: 0;
     margin: 0;
@@ -104,7 +105,7 @@ h1,h2,h3,h4,h5,h6{
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     width: 100%;
-    color: #0000cc;
+    color: #1e1e94;
     text-align: center;
 }
 
@@ -284,7 +285,9 @@ h1,h2,h3,h4,h5,h6{
         font-size: 60px;
     }
     .banner .contenedor{
-        top: 480px;
+        color: #fff;
+        top: 380px;
+        left: 350px;
     }
     .info{
         margin-top: -220px;
