@@ -4,6 +4,7 @@
 * {
     box-sizing: border-box;
 }
+
 img{
     display: block;
     max-width: 100%;
@@ -37,6 +38,8 @@ h1,h2,h3,h4,h5,h6{
     justify-content: space-between;
 }
 
+
+
 .logo, .icon-menu{
     margin: 5px;
     color: #0033cc;
@@ -52,7 +55,8 @@ h1,h2,h3,h4,h5,h6{
     margin-left: auto;
     border-radius: 5px;
     cursor: pointer;
-    right: 70px;
+    left: 20px;
+    position: absolute;
 }
 
 /*Estilos de menu*/
@@ -165,17 +169,30 @@ h1,h2,h3,h4,h5,h6{
 /*--------------------Estilos responsive--------------*/
 
 @media(min-width:480px){
+    .inicio {
+        background: #747474ce;
+        padding: 13px;
+        position: absolute;
+        right: 30px;
+        top: 10px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 24px;
+    }
+
     .log{
         font-size: 40px;
     }
+
     .banner__titulo{
-        font-size: 30px;
+        
         margin: 5px 0;
+        color: #fff;
     }
     .banner__txt{
         display: block;
-        font-size: 18px;
         margin: 7px 0;
+        color: #fff;
     }
     .info {
         display: flex;
@@ -193,11 +210,14 @@ h1,h2,h3,h4,h5,h6{
         flex-wrap: wrap;
         margin-top: 0;
     }
+    
     .section__titulo{
         width: 100%;
     }
     .paquetes__columna{
-        width: 100%;
+        width: 50%;
+        margin: 5px;
+        position: relative;
     }
     .footer .social [class^="icon-"]{
         margin: 0 10px;
@@ -206,12 +226,12 @@ h1,h2,h3,h4,h5,h6{
 }
 
 @media(min-width:768px){
-    .banner__titulo{
-        font-size: 50px;
-    }
+    
     .paquetes__titulo{
         font-size: 40px;
     }
+
+    
     
 }
 @media(min-width:1024px){
@@ -223,12 +243,15 @@ h1,h2,h3,h4,h5,h6{
         margin: 30px 0;
     }
     .nav{
-        position: static;
-        width: auto;
+        position: fixed;
+        width: 536px;
+        left: 0px;
+        top: 0px;
+        background: rgba(102, 102, 102, 0.466);
+        z-index: 1;
     }
     .menu{
         display: flex;
-        color: #0000cc;
     }
     .icon-menu{
         display: none;
@@ -242,10 +265,15 @@ h1,h2,h3,h4,h5,h6{
         background: #0000cc;
     }
     .banner__titulo{
-        font-size: 60px;
+        font-size: 40px;
     }
     .banner__txt{
-        font-size: 25px;
+        font-size: 18px;
+    }
+    .banner .contenedor{
+        position: absolute;
+        top: 260px;
+        left: 260px;
     }
     .info{
         margin-top: -120px;
