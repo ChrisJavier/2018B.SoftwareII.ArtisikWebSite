@@ -38,7 +38,19 @@ h1,h2,h3,h4,h5,h6{
     justify-content: space-between;
 }
 
-
+.inicio {
+    background: #747474ce;
+    padding: 8px;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 24px;
+}
+.inicio:hover{
+    background: #616161ce;
+}
 
 .logo, .icon-menu{
     margin: 5px;
@@ -56,16 +68,17 @@ h1,h2,h3,h4,h5,h6{
     border-radius: 5px;
     cursor: pointer;
     left: 20px;
-    position: absolute;
+    position: fixed;
 }
 
 /*Estilos de menu*/
 .nav{
-    position: absolute;
+    position: fixed;
     top: 60px;
-    right: -100%;
+    left: -100%;
     width: 100%;
     transition: all 0.4s;
+    z-index: 100;
 }
 
 .menu{
@@ -91,7 +104,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .mostrar {
-    right: 0;
+    left: 0;
 }
 
 /*-------------------Estilos del banner---------------*/
@@ -105,12 +118,13 @@ h1,h2,h3,h4,h5,h6{
 }
 .banner .contenedor{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 85%;
+    left: 55%;
     transform: translateX(-50%) translateY(-50%);
     width: 100%;
-    color: #4545da;
+    color: #fff;
     text-align: center;
+    font-size: 13px;
 }
 
 .banner__txt{
@@ -169,17 +183,7 @@ h1,h2,h3,h4,h5,h6{
 /*--------------------Estilos responsive--------------*/
 
 @media(min-width:480px){
-    .inicio {
-        background: #747474ce;
-        padding: 13px;
-        position: absolute;
-        right: 30px;
-        top: 10px;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 24px;
-    }
-
+    
     .log{
         font-size: 40px;
     }
@@ -215,12 +219,18 @@ h1,h2,h3,h4,h5,h6{
         width: 100%;
     }
     .paquetes__columna{
-        width: 50%;
-        margin: 5px;
+        float: left;
+        width: 45%;
+        margin: 6px;
         position: relative;
+        left: 4%;
     }
     .footer .social [class^="icon-"]{
         margin: 0 10px;
+    }
+
+    .footer {
+        clear: both;
     }
    
 }
@@ -242,6 +252,7 @@ h1,h2,h3,h4,h5,h6{
         font-size: 50px;
         margin: 30px 0;
     }
+
     .nav{
         position: fixed;
         width: 536px;
@@ -303,6 +314,16 @@ h1,h2,h3,h4,h5,h6{
     .menu__link:hover, .select {
         background: #0000cca4;
         color: #fff;
+    }
+    .inicio {
+        
+        padding: 15px;
+        position: absolute;
+        right: 30px;
+        top: 10px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 30px;
     }
 }
 @media(min-width:1280px){
