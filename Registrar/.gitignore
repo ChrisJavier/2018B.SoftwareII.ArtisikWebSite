@@ -1,0 +1,7 @@
+composer.lock
+config/dev.json
+config/staging.json
+config/production.json
+public/bower_components
+vendor
+logs/error.log
