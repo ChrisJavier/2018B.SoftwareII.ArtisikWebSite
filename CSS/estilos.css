@@ -8,6 +8,7 @@
 img{
     display: block;
     max-width: 100%;
+    width: 100%;
 }
 body {
     margin: 0;
@@ -335,8 +336,8 @@ h1,h2,h3,h4,h5,h6{
     }
     .banner .contenedor{
         color: #fff;
-        top: 380px;
-        left: 350px;
+        top: 350px;
+        left: 270px;
     }
     .info{
         margin-top: -220px;
