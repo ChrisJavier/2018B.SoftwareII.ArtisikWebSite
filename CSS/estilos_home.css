@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css?family=Italianno');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Italianno', cursive;
+    letter-spacing: 1.5px;
+}
+
+.contenedor{
+    margin: auto;
+    width: 99%;
+}
+/*--------------------------Estilos de header---------------*/
+.header {
+    height: 60px;
+}
+.header .contenedor {
+    display:flex;
+    justify-content: space-between;
+}
+
+.salir {
+    background: #747474ce;
+    padding: 8px;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 24px;
+}
+
+.salir:hover{
+    background: #616161ce;
+}
+
+.logo, .icon-menu{
+    margin: 5px;
+    color: #0033cc;
+}
+.icon-menu {
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: #0000cc00;
+    text-align: center;
+    line-height: 45px;
+    margin-left: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    left: 20px;
+    position: fixed;
+}
+
+/*Estilos de menu*/
+.nav{
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    transition: all 0.4s;
+    z-index: 100;
+}
+
+.menu{
+    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #4545da;
+}
+
+.menu__link{
+    display: block;
+    padding: 20px;
+    background: #fff;
+    text-decoration: none;
+    color: #4545da;
+
+}
+
+.menu__link:hover, .select {
+    background: #0033ccc5;
+    color: #fff;
+}
+
+.mostrar {
+    left: 0;
+}
+
+/*-------------------Estilos del banner---------------*/
+
+.banner{
+    margin-top: -60px;
+    position: relative;
+    z-index:  -1000;
+    margin-bottom: 20px;
+}
+
+/*--------------------Estilos responsive--------------*/
+
+@media(min-width:1024px){
+    .contenedor{
+        width: 1000px;
+    }
+   
+    .nav{
+        position: fixed;
+        width: 385px;
+        left: 0px;
+        top: 0px;
+        background: rgba(102, 102, 102, 0.466);
+        z-index: 1;
+    }
+    .menu{
+        display: flex;
+    }
+    .icon-menu{
+        display: none;
+    }
+    .menu__link{
+        background: none;
+        font-size: 20px;
+    }
+   
+    .menu__link{
+        background: #0000cc00;
+        color: #fff;
+    }
+    
+    .menu__link:hover, .select {
+        background: #0000cca4;
+        color: #fff;
+    }
+   
+    .salir{
+        padding: 15px;
+        position: absolute;
+        right: 30px;
+        top: 10px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 30px;
+    }
+}
+@media(min-width:1280px){
+    .contenedor{
+        width: 1200px;
+    }
+    .logo{
+        font-size: 60px;
+    }
+}

@@ -49,6 +49,18 @@ h1,h2,h3,h4,h5,h6{
     text-decoration: none;
     border-radius: 24px;
 }
+
+.salir {
+    background: #747474ce;
+    padding: 8px;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 24px;
+}
+
 .inicio:hover{
     background: #616161ce;
 }
@@ -115,30 +127,11 @@ h1,h2,h3,h4,h5,h6{
     position: relative;
     z-index:  -1000;
     margin-bottom: 20px;
-    
-}
-.banner .contenedor{
-    position: absolute;
-    top: 85%;
-    left: 55%;
-    transform: translateX(-50%) translateY(-50%);
-    width: 100%;
-    color: #fff;
-    text-align: center;
-    font-size: 13px;
+    height:422px;
 }
 
-.banner__txt{
-    display: none;
-}
-/*Estilos de info*/
 
-.info__columna{
-    background: #4545da;
-    color: #fff;
-    padding: 15px;
-    margin-bottom: 30px;
-}
+
 /*--------------------Estilos de paquetes--------------*/
 .paquetes__columna{
     position: relative;
@@ -189,16 +182,6 @@ h1,h2,h3,h4,h5,h6{
         font-size: 40px;
     }
 
-    .banner__titulo{
-        
-        margin: 5px 0;
-        color: #fff;
-    }
-    .banner__txt{
-        display: block;
-        margin: 7px 0;
-        color: #fff;
-    }
     .info {
         display: flex;
         justify-content: space-between;
@@ -256,7 +239,7 @@ h1,h2,h3,h4,h5,h6{
 
     .nav{
         position: fixed;
-        width: 536px;
+        width: 496px;
         left: 0px;
         top: 0px;
         background: rgba(102, 102, 102, 0.466);
@@ -276,17 +259,7 @@ h1,h2,h3,h4,h5,h6{
         color: #fff;
         background: #4545da;
     }
-    .banner__titulo{
-        font-size: 40px;
-    }
-    .banner__txt{
-        font-size: 18px;
-    }
-    .banner .contenedor{
-        position: absolute;
-        top: 260px;
-        left: 260px;
-    }
+  
     .info{
         margin-top: -120px;
     }
@@ -320,13 +293,12 @@ h1,h2,h3,h4,h5,h6{
         
         padding: 15px;
         position: absolute;
-        right: 30px;
+        right: 110px;
         top: 10px;
         color: #fff;
         text-decoration: none;
         border-radius: 30px;
     }
-
     .salir{
         padding: 15px;
         position: absolute;
@@ -343,11 +315,6 @@ h1,h2,h3,h4,h5,h6{
     }
     .logo{
         font-size: 60px;
-    }
-    .banner .contenedor{
-        color: #fff;
-        top: 350px;
-        left: 270px;
     }
     .info{
         margin-top: -220px;
