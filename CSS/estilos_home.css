@@ -4,7 +4,6 @@
 * {
     box-sizing: border-box;
 }
-
 img{
     display: block;
     max-width: 100%;
@@ -25,6 +24,20 @@ h1,h2,h3,h4,h5,h6{
     font-size: 40px;
     color: #4545da;
 }
+.salir {
+    background: #4545da;
+    padding: 8px;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 24px;
+    width: 85px;
+    text-align: center;
+}
+
+
 
 .contenedor{
     margin: auto;
@@ -39,18 +52,8 @@ h1,h2,h3,h4,h5,h6{
     justify-content: space-between;
 }
 
-.inicio {
-    background: #747474ce;
-    padding: 8px;
-    position: absolute;
-    right: 10px;
-    top: 7px;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 24px;
-}
-.inicio:hover{
-    background: #616161ce;
+.salir:hover{
+    background: #0033cc;
 }
 
 .logo, .icon-menu{
@@ -62,7 +65,7 @@ h1,h2,h3,h4,h5,h6{
     width: 40px;
     height: 40px;
     font-size: 30px;
-    background: #0000cc00;
+    background: #fff;
     text-align: center;
     line-height: 45px;
     margin-left: auto;
@@ -93,14 +96,14 @@ h1,h2,h3,h4,h5,h6{
 .menu__link{
     display: block;
     padding: 20px;
-    background: #fff;
+    background: #4545da;
     text-decoration: none;
-    color: #4545da;
+    color: #fff;
 
 }
 
 .menu__link:hover, .select {
-    background: #0033ccc5;
+    background: #0131c2;
     color: #fff;
 }
 
@@ -115,7 +118,6 @@ h1,h2,h3,h4,h5,h6{
     position: relative;
     z-index:  -1000;
     margin-bottom: 20px;
-    
 }
 .banner .contenedor{
     position: absolute;
@@ -131,58 +133,7 @@ h1,h2,h3,h4,h5,h6{
 .banner__txt{
     display: none;
 }
-/*Estilos de info*/
-
-.info__columna{
-    background: #4545da;
-    color: #fff;
-    padding: 15px;
-    margin-bottom: 30px;
-}
-/*--------------------Estilos de paquetes--------------*/
-.paquetes__columna{
-    position: relative;
-    margin-bottom: 30px;
-}
-.paquetes__descripcion{
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #fff;
-    background: rgba(0,0,0,0.4);
-    width: 60%;
-    height: 100%;
-    padding: 20px;
-}
-
-.paquetes__titulo{
-    font-size: 60px;
-    margin: 5px 0;
-}
-.paquetes__img{
-    width: 100%;
-}
-/*--------------------Estilos de footer--------------*/
-.footer{
-    background: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-.footer .social [class^="icon-"]{
-    display: inline-block;
-    color: #333;
-    text-decoration: none;
-    font-size: 30px;
-    padding: 10px;
-    background: white;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    line-height: 40px;
-}
 /*--------------------Estilos responsive--------------*/
-
 @media(min-width:480px){
     
     .log{
@@ -211,55 +162,29 @@ h1,h2,h3,h4,h5,h6{
         font-size: 30px;
         margin: 5px 0;
     }
-    .paquetes{
-        flex-wrap: wrap;
-        margin-top: 0;
-    }
-    
-    .section__titulo{
-        width: 100%;
-    }
-    .paquetes__columna{
-        float: left;
-        width: 45%;
-        margin: 6px;
-        position: relative;
-        left: 4%;
-    }
-    .footer .social [class^="icon-"]{
-        margin: 0 10px;
-    }
-
-    .footer {
-        clear: both;
-    }
-   
-}
-
-@media(min-width:768px){
-    
-    .paquetes__titulo{
-        font-size: 40px;
-    }
-
-    
-    
 }
 @media(min-width:1024px){
     .contenedor{
         width: 1000px;
     }
-    .section_titulo{
-        font-size: 50px;
-        margin: 30px 0;
+   
+    .salir {
+        background: #0033ccc5;
+        padding: 8px;
+        position: absolute;
+        right: 10px;
+        top: 7px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 24px;
     }
 
     .nav{
         position: fixed;
-        width: 536px;
+        width: 385px;
         left: 0px;
         top: 0px;
-        background: rgba(102, 102, 102, 0.466);
+        background: #0033ccc5 ;
         z-index: 1;
     }
     .menu{
@@ -272,41 +197,7 @@ h1,h2,h3,h4,h5,h6{
         background: none;
         font-size: 20px;
     }
-    .select{
-        color: #fff;
-        background: #4545da;
-    }
-    .banner__titulo{
-        font-size: 40px;
-    }
-    .banner__txt{
-        font-size: 18px;
-    }
-    .banner .contenedor{
-        position: absolute;
-        top: 260px;
-        left: 260px;
-    }
-    .info{
-        margin-top: -120px;
-    }
-    .info__colunma{
-        padding: 30px;
-    }
-    .info__titulo{
-        font-size: 40px;
-        text-align: center;
-    }
-    .paquetes__descripcion{
-        padding: 20px;
-       
-    }
-    .paquetes__titulo{
-        font-size: 50px;
-    }
-    .paquetes__txt{
-        font-size: 20px;
-    }
+   
     .menu__link{
         background: #0000cc00;
         color: #fff;
@@ -316,17 +207,7 @@ h1,h2,h3,h4,h5,h6{
         background: #0000cca4;
         color: #fff;
     }
-    .inicio {
-        
-        padding: 15px;
-        position: absolute;
-        right: 30px;
-        top: 10px;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 30px;
-    }
-
+   
     .salir{
         padding: 15px;
         position: absolute;
@@ -343,13 +224,5 @@ h1,h2,h3,h4,h5,h6{
     }
     .logo{
         font-size: 60px;
-    }
-    .banner .contenedor{
-        color: #fff;
-        top: 350px;
-        left: 270px;
-    }
-    .info{
-        margin-top: -220px;
     }
 }
