@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Inicio</title>
     <meta name ="viewport" content="witdh=device-witdh, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
-    <link rel="stylesheet" href="../../CSS/estilos_internos.css">
+    <link rel="stylesheet" href="../../CSS/estilos_internos_cliente.css">
     <link rel="stylesheet" href="../../CSS/estilos_icon.css">
     </head>
 <body>
@@ -23,7 +23,14 @@
             
             <span><a href="Home.html" class="inicio">Regresar</a></span>
             <span><a href="../../index.html" class="salir">Salir</a></span>
-            
+            <form action="conexion_eliminar.php" method="POST">
+                <h1>Ingrese el número de cédula del proveedor a eliminar</h1>
+
+                <input type="text" name="cedula_c" placeholder="Número de cédula" required/>
+
+                <input type="submit" value="Eliminar proveedor" /input>
+
+            </form>
         </div>
       </header>
       
