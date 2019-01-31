@@ -1,4 +1,15 @@
-<?php
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <meta name ="viewport" content="witdh=device-witdh, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
+    <link rel="stylesheet" href="../../CSS/estilos_internos_cliente.css">
+    <link rel="stylesheet" href="../../CSS/estilos_icon.css">
+    </head>
+<body>
+    
+    <?php
 	
     $db_host="localhost";
     $db_user="root";
@@ -25,9 +36,11 @@
     if(mysqli_num_rows($resultado)>0)
     {
         mysqli_query($link,$delete);
-
-        echo'<h2>Cliente eliminado</h2>
-        <a href="Home.html">Volver</a>';
+        
+        echo "<div class = 'div'>";
+        echo'<h2><center>Cliente eliminado</center></h2>
+        <center><a href="Home.html">Volver</a></center>';
+        echo "</div>"; 
       
         // Libera la memoria del resultado
         mysqli_free_result($resultado);
@@ -35,11 +48,41 @@
     }
     else
     {
-        echo'<h2>No existe un cliente con el número de cédula indicado</h2>
-        <a href="Home.html">Volver</a>';
+        echo "<div class = 'div'>"; 
+        echo'<h2><center>No existe un cliente con el número de cédula indicado</center></h2>
+        <center><a href="Home.html">Volver</a></center>';
+        echo "</div>"; 
     }
 
 
 		
 	mysqli_close($link);
 ?>
+    
+    
+    <header class ="header" id="header">
+        <div class = "contenedor">  
+           <h1 class = "logo"></h1>
+           <span class = "icon-menu" id="btn-menu"></span>
+           <nav class = "nav" id="nav">
+            <ul class = "menu">
+                <li class = "menu__item"><a class = "menu__link" href="Ingresar.html">Ingresar</a></li>
+                <li class = "menu__item"><a class = "menu__link" href="Consultar.html">Consultar</a></li>   
+                <li class = "menu__item"><a class = "menu__link" href="Actualizar.html">Actualizar</a></li>
+                <li class = "menu__item"><a class = "menu__link select" href="Eliminar.html">Eliminar</a></li> 
+            </ul>
+            </nav>
+            
+            <span><a href="Home.html" class="inicio">Regresar</a></span>
+            <span><a href="../../index.html" class="salir">Salir</a></span>
+  
+        
+            
+        </div>
+      </header>
+      
+      
+     <script src="../../JS/menu.js"></script>
+</body>
+</html>
+

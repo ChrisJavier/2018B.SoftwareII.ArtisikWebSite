@@ -46,7 +46,7 @@
     {      
          while($row = mysqli_fetch_array($resultado))
          {
-             
+             $cedulac = $row['CEDULA'];
              $nombrec = $row['NOMBRE'];
 	         $telefonoc = $row['TELEFONO'];
 	         $correoc = $row['CORREO'];
@@ -55,9 +55,10 @@
         
         //echo'<h2>Datos Actualizados</h2>
         //<a href="Home.html">Volver</a>';
+         echo "<div class = 'div'>";  
          echo "<form action='conexion_actualizar2.php' method='POST'>";
-         echo "<input type='text' name='cedula_c' value='$cedulac' placeholder='Cédula' />";
-         echo "<h1>Ingrese los datos del cliente para modificar sus datos</h1>";           
+         echo "<input type='hidden' name='cedula_c' value='$cedulac' placeholder='Cédula' />";
+         echo "<h1><center>Ingrese los datos del cliente para modificar sus datos</center></h1>";           
            
          echo "<input type='text' name='nombre_c' value='$nombrec' placeholder='Nombre' required/>";
          echo "<input type='text' name='telefono_c' value='$telefonoc' placeholder='Número de teléfono' required/>";
@@ -65,6 +66,7 @@
          echo "<input type='text' name='direccion_c' value='$direccionc' placeholder='Dirección' required/>";
                         
          echo "<input type='submit' value='Actualizar cliente'/>";
+         echo "</div>"; 
          echo "</form>";
       
         // Libera la memoria del resultado
@@ -73,8 +75,10 @@
     }
     else
     {
-        echo'<h2>No existe un cliente con el número de cédula indicado</h2>
-        <a href="Home.html">Volver</a>';
+        echo "<div class = 'div'>"; 
+        echo'<h2><center>No existe un cliente con el número de cédula indicado</center></h2>
+        <center><a href="Home.html">Volver</a></center>';
+        echo "</div>"; 
     }
 
 		
@@ -100,12 +104,6 @@
             <span><a href="Home.html" class="inicio">Regresar</a></span>
             <span><a href="../../index.html" class="salir">Salir</a></span>
             
-        <form action="" method="POST">       
-            
-            
-        </form>
-            
-       
             
         </div>
       </header>
