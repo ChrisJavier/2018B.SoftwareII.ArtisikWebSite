@@ -47,10 +47,13 @@
     if(mysqli_num_rows($resultado)>0)
     {      
         
-        echo "<input type='text' name='direccion_c2' value='$direccionc' placeholder='Dirección' />";
+        //echo "<input type='text' name='direccion_c2' value='$direccionc' placeholder='Dirección' />";
         mysqli_query($link,$update);
-        echo'<h2>Datos Actualizados</h2>
-        <a href="Home.html">Volver</a>';
+        
+        echo "<div class = 'div'>";  
+        echo'<h2><center>Datos Actualizados</center></h2>
+        <center><a href="Home.html">Volver</a><c/enter>';
+        echo "</div>";
               
         // Libera la memoria del resultado
         mysqli_free_result($resultado);
@@ -58,8 +61,10 @@
     }
     else
     {
-        echo'<h2>No existe un cliente con el número de cédula indicado</h2>
-        <a href="Home.html">Volver</a>';
+        echo "<div class = 'div'>"; 
+        echo'<h2><center>No existe un cliente con el número de cédula indicado</center></h2>
+        <center><a href="Home.html">Volver</a></center>';
+        echo "</div>"; 
     }
 
 		

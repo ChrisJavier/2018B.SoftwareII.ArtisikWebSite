@@ -1,10 +1,10 @@
 <?php
 	
-    $db_host="localhost:3306";
+    $db_host="localhost";
     $db_user="root";
     $db_password="";
     $db_name="prueba_artistik";
-    $db_table="cliente";
+    $db_table="proveedor";
 
 	$link = mysqli_connect($db_host, $db_user, $db_password) or die("<h2>Error de conexión con el servidor</h2> 
     <a href='Consultar.html'>Volver</a>");
@@ -13,7 +13,7 @@
     <a href='Consultar.html'>Volver</a>");
 
 	
-	$cedulac = $_POST['cedula_c'];
+	$cedulap = $_POST['cedula_p'];
 	//$nombrec = $_POST['nombre_c'];
 	//$telefonoc = $_POST['telefono_c'];
 	//$correoc = $_POST['correo_c'];
@@ -41,7 +41,7 @@ function sql_dump_result($result)
 
 
 
-    $select="SELECT * FROM $db_table where cedula=$cedulac";
+    $select="SELECT * FROM $db_table where cedula=$cedulap";
 
 	$resultado=mysqli_query($link,$select) or die("<h2>Error en la consulta</h2> 
     <a href='Consultar.html'>Volver</a>");
@@ -61,7 +61,7 @@ function sql_dump_result($result)
     }
     else
     {
-        echo'<h2>No existe un cliente con el número de cédula indicado</h2>
+        echo'<h2>No existe un proveedor con el número de cédula indicado</h2>
         <a href="Home.html">Volver</a>';
     }
 

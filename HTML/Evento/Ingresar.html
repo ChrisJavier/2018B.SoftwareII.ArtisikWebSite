@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Inicio</title>
     <meta name ="viewport" content="witdh=device-witdh, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
-    <link rel="stylesheet" href="../../CSS/estilos_internos.css">
+    <link rel="stylesheet" href="../../CSS/estilos_internos_cliente.css">
     <link rel="stylesheet" href="../../CSS/estilos_icon.css">
     </head>
 <body>
@@ -15,7 +15,7 @@
            <nav class = "nav" id="nav">
             <ul class = "menu">
                 <li class = "menu__item"><a class = "menu__link select" href="Ingresar.html">Ingresar</a></li>
-                <li class = "menu__item"><a class = "menu__link" href="Consultar.html"">Consultar</a></li>   
+                <li class = "menu__item"><a class = "menu__link" href="Consultar.html">Consultar</a></li>
                 <li class = "menu__item"><a class = "menu__link" href="Actualizar.html">Actualizar</a></li>
                 <li class = "menu__item"><a class = "menu__link" href="Eliminar.html">Eliminar</a></li> 
             </ul>
@@ -23,7 +23,19 @@
             
             <span><a href="../Home.html" class="inicio">Regresar</a></span>
             <span><a href="../../index.html" class="salir">Salir</a></span>
-            
+<div class="div">
+            <form action="conexion.php" method="POST">
+                <h1>Ingrese los Datos del evento</h1>
+
+                <input type="text" name="codigo" placeholder="codigo de Evento" required/>
+                <input type="text" name="Direccion" placeholder="Direccion" required/>
+                <input type="text" name="Cliente" placeholder="Cliente" required/>
+                <input type="text" name="Hora" placeholder="Hora" required/>
+                <input type="text" name="Fecha" placeholder="Fecha" required/>
+                <input type="submit" value="Registrar Evento" />
+
+            </form>
+        </div>
         </div>
       </header>
       
