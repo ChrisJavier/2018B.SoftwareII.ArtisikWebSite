@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Inicio</title>
     <meta name ="viewport" content="witdh=device-witdh, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
-    <link rel="stylesheet" href="../../CSS/estilos_internos.css">
+    <link rel="stylesheet" href="../../CSS/estilos_internos_cliente.css">
     <link rel="stylesheet" href="../../CSS/estilos_icon.css">
     </head>
 <body>
@@ -15,14 +15,30 @@
            <nav class = "nav" id="nav">
             <ul class = "menu">
                 <li class = "menu__item"><a class = "menu__link select" href="Ingresar.html">Ingresar</a></li>
-                <li class = "menu__item"><a class = "menu__link" href="Consultar.html"">Consultar</a></li>   
+                <li class = "menu__item"><a class = "menu__link" href="Consultar.html">Consultar</a></li>   
                 <li class = "menu__item"><a class = "menu__link" href="Actualizar.html">Actualizar</a></li>
                 <li class = "menu__item"><a class = "menu__link" href="Eliminar.html">Eliminar</a></li> 
             </ul>
             </nav>
             
-            <span><a href="Home.html" class="inicio">Regresar</a></span>
+            <span><a href="../Home.html" class="inicio">Regresar</a></span>
             <span><a href="../../index.html" class="salir">Salir</a></span>
+            
+            
+        <form action="conexion.php" method="POST">       
+            <h1>Ingrese los Datos del cliente a registrar</h1>
+            
+            <input type="text" name="cedula_c" placeholder="Número de cédula" required/>
+            <input type="text" name="nombre_c" placeholder="Nombre" required/>
+            <input type="text" name="telefono_c" placeholder="Número de teléfono" required/>
+            <input type="text" name="correo_c" placeholder="E-mail" required/>
+            <input type="text" name="direccion_c" placeholder="Dirección" required/>
+            <input type="submit" value="Registrar cliente" /input>
+            
+        </form>
+       
+            
+            
             
         </div>
       </header>  

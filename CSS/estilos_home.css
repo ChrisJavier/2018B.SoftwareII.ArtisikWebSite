@@ -19,6 +19,11 @@ h1,h2,h3,h4,h5,h6{
     letter-spacing: 1.5px;
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .section__titulo {
     text-align: center;
     font-size: 40px;
@@ -133,9 +138,41 @@ h1,h2,h3,h4,h5,h6{
 .banner__txt{
     display: none;
 }
+
+.info__columna{
+    background: #4545da;
+    color: #fff;
+    padding: 15px;
+    margin: 20px;
+    margin-bottom: 30px;
+}
+.info__titulo{
+    font-size: 40px;
+    text-align: center;
+}
+
+.logo_img{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: -20px;
+    left: 20px;
+}
 /*--------------------Estilos responsive--------------*/
 @media(min-width:480px){
     
+    .info {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -90px;
+    }
+    .info__columna{
+        width: 32%;
+    }
+    .info__titulo{
+        font-size: 30px;
+        margin: 5px 0;
+    }
     .log{
         font-size: 40px;
     }
@@ -160,7 +197,7 @@ h1,h2,h3,h4,h5,h6{
     }
     .info__titulo{
         font-size: 30px;
-        margin: 5px 0;
+        margin: 5px;
     }
 }
 @media(min-width:1024px){
@@ -168,6 +205,20 @@ h1,h2,h3,h4,h5,h6{
         width: 1000px;
     }
    
+    .info{
+        position: absolute;
+        top: 300px;
+        margin: 20px;
+    }
+    .info__colunma{
+        padding: 30px;
+    }
+
+    .info__titulo{
+        font-size: 40px;
+        text-align: center;
+    }
+    
     .salir {
         background: #0033ccc5;
         padding: 8px;
@@ -217,6 +268,14 @@ h1,h2,h3,h4,h5,h6{
         text-decoration: none;
         border-radius: 30px;
     }
+
+    .logo_img{
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        top: -25px;
+        left: 50px;
+    }
 }
 @media(min-width:1280px){
     .contenedor{
@@ -224,5 +283,8 @@ h1,h2,h3,h4,h5,h6{
     }
     .logo{
         font-size: 60px;
+    }
+    .info{
+        margin-top: -220px;
     }
 }
